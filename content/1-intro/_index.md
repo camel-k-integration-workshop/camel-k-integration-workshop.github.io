@@ -28,7 +28,7 @@ Alternatively, you can follow [this link](https://telegram.org/) to get the desk
 #### Get our Chat ID
 &#9744; Search for username @RawDataBot with name `Telegram Bot Raw` \
 &#9744; Start the chat (/start) \
-&#9744; You will receive a message from the @RawDataBot, store the `"id"` in the `"chat"` section somewhere safe. 
+&#9744; You will receive a message from the @RawDataBot, store the value of `"id"` in the `"chat"` section somewhere safe. 
 
 {{% notice tip %}}
 Once we get the telegram bot token and the chat ID, remember to save them somewhere safe and easily accessible. We will need them in the following examples.
