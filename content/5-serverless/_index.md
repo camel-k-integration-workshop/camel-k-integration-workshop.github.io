@@ -4,7 +4,7 @@ weight = 10
 +++
 
 
-In [this example](https://github.com/nexus-Six/camelk-integration-workshop/tree/master/03-knative-example/telegram-example/printer-example), we will create a simple telegram source `Kamelet` and use `KameletBinding` to bind the source to a Knative channel. Then we will create a **Printer** that prints out the messages sent to the telegram source. 
+In [this example](https://github.com/camel-k-integration-workshop/camel-k-workshop/tree/main/03-knative-example), we will create a simple telegram source `Kamelet` and use `KameletBinding` to bind the source to a Knative channel. Then we will create a **Printer** that prints out the messages sent to the telegram source. 
 
 In the previous example, we've talked about the concept of `Kamelet`. So what is a `KameletBinding`? A `KameletBinding` lets you tell a `Kamelet` source to send events to a destination that can be represented by a Knative channel or a Kafka topic, the same mechanism lets a `Kamelet` sink consume events from a destination. Therefore, you can use `KameletBindings` to define the high-level flows of an event-driven architecture, as you can see in the following picture, we will create all the components in the architecture together in this example. 
 
@@ -27,7 +27,7 @@ Knative is an open source project that helps us deploy, run, manage serverless a
 
 &#9744; Create both instances of Knative Serving and Eventing via OpenShift Serverless operator on the web console
 
-&#9744;  `oc apply -f telegram-simple-source.kamelet.yaml` - create a [telegram-simple-source.kamelet.yaml](https://github.com/nexus-Six/camelk-integration-workshop/blob/master/03-knative-example/telegram-example/printer-example/telegram-simple-source.kamelet.yaml) 
+&#9744;  `oc apply -f telegram-simple-source.kamelet.yaml` - create a [telegram-simple-source.kamelet.yaml](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/03-knative-example/telegram-simple-source.kamelet.yaml) 
 ```
 spec:
   definition:
@@ -70,8 +70,8 @@ The `flow` section defines the integration flow. In this case, it goes from the 
 
 
 &#9744; `oc get kamelets` - check if the source kamelet is ready \
-&#9744; `oc apply -f telegram-channel.yaml` - create a [Knative InMemory Channel](https://github.com/nexus-Six/camelk-integration-workshop/blob/master/03-knative-example/telegram-example/printer-example/telegram-channel.yaml) on the cluster \
-&#9744; `oc apply -f telegram-source-binding.yaml`  - create a [telegram-source-binding.yaml](https://github.com/nexus-Six/camelk-integration-workshop/blob/master/03-knative-example/telegram-example/printer-example/telegram-source-binding.yaml) that binds the Knative channel to the telegram source
+&#9744; `oc apply -f telegram-channel.yaml` - create a [Knative InMemory Channel](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/03-knative-example/telegram-channel.yaml) on the cluster \
+&#9744; `oc apply -f telegram-source-binding.yaml`  - create a [telegram-source-binding.yaml](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/03-knative-example/telegram-source-binding.yaml) that binds the Knative channel to the telegram source
 > Please replace the `<your-bot-token>` to your actual bot token!
 ```
 source:
@@ -94,7 +94,7 @@ sink:
 &#9744; `oc get integrations` - check the status of the KameletBinding 
 
 
-&#9744; kamel run [printer.groovy](https://github.com/nexus-Six/camelk-integration-workshop/blob/master/03-knative-example/telegram-example/printer-example/printer.groovy) - create the integration that prints out the messages sent to the telegram bot 
+&#9744; kamel run [printer.groovy](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/03-knative-example/printer.groovy) - create the integration that prints out the messages sent to the telegram bot 
 ```
 from('knative:channel/telegram')
   .convertBodyTo(String.class)
@@ -109,6 +109,7 @@ Here we create the simple event consumer that takes the messages from the Knativ
 
 &#9744; Stop sending messages to the telegram bot 
 > Printer pod autoscales to zero 
+
 > If you want to trigger the printer running again, you can simply send the message to the bot again, and after a few second, you should see the printer pod will start scaling up again.
 
 &#9744; `oc delete project userX-message-printer` - clean up the namespace
