@@ -1,9 +1,9 @@
 +++
-title = "Task 2 - Kamelet example"
+title = "Task 2 - Using Kamelets"
 weight = 8
 +++
 
-[This example](https://github.com/nexus-Six/camelk-integration-workshop/tree/master/02-kamelets-examples/chuck-norris-example) demonstrates how to create a simple Chuck Norris Kamelet source and how to integrate it with telegram. Our goal is to receive some funny jokes on our Telegram channel.
+[This example](https://github.com/camel-k-integration-workshop/camel-k-workshop/tree/main/02-kamelets-examples) demonstrates how to create a simple Chuck Norris Kamelet source and how to integrate it with telegram. Our goal is to receive some funny jokes in terminal first, and then on our Telegram channel.
 
 > If you still don't have your Telegram account, bot or chat ID, please refer to the first chapter "Intro" for the instructions on how to get them. 
 
