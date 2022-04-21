@@ -7,7 +7,7 @@ weight = 1
 Before we start going through the workshop, make sure that you have **VSCode** or **VSCodium** installed on your machine.
 For simplicity, we will reference the IDE as **VSCode** going forward.
 > If you are familiar with Git, you can clone following GitHub Repository and open it with VSCode:
-> https://github.com/nexus-Six/camelk-integration-workshop.git
+> https://github.com/camel-k-integration-workshop/camel-k-workshop
 
 We need to install the VSCode extensions -- **Extension Pack for Apache Camel by Red Hat** for later use.
 {{< figure src="../images/extension_pack.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
