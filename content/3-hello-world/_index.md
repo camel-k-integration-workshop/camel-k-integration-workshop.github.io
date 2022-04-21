@@ -3,7 +3,7 @@ title = "Task 1 - Hello World"
 weight = 7
 +++
 
-[This example](https://github.com/nexus-Six/camelk-integration-workshop/tree/master/01-helloworld-example) demonstrates a simple Camel K integration that periodically prints a "Hello World from Camel K". Let's recap the simple architecture of this example:
+[This example](https://github.com/camel-k-integration-workshop/camel-k-workshop/tree/main/01-helloworld-example) demonstrates a simple Camel K integration that periodically prints a "Hello World from Camel K". Let's recap the simple architecture of this example:
 
 {{< figure src="../images/camelk_workshop01_arch.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
 
@@ -12,7 +12,7 @@ weight = 7
 &#9744; Make sure you have the terminal in VSCode opened and you are logged to OpenShift \
 &#9744; `oc new-project helloworld` - create a new project with the name 'helloworld' \
 &#9744; `oc get csv` - you should see the Camel K operator running \
-&#9744; Create a [helloworld.groovy](https://github.com/nexus-Six/camelk-integration-workshop/blob/master/01-helloworld-example/helloworld.groovy) file 
+&#9744; Create a [helloworld.groovy](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/01-helloworld-example/helloworld.groovy) file 
 
 > We will elaborate on the integration file during the workshop 
 
