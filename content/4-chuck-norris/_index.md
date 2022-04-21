@@ -34,6 +34,7 @@ Kamelets have two kinds of connectors, **sources** and **sinks**. Sources produc
 &#9744; create a [chuck-norris-example.groovy](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/02-kamelets-examples/chuck-norris-example.groovy) \
 &#9744; `kamel run chuck-norris-example.groovy --dev`- run the integration using chuck norris kamelet in the "dev" mode 
 > You should see the jokes appearing in the terminal. 
+
 > Groovy is just one of many programming languages, that you can use to write integration files. All the supported languages for Camel K integration can be found [here.](https://camel.apache.org/camel-k/1.8.x/languages/languages.html)
 
 &#9744; Change the `.to('log:info')` to `.to("telegram:bots?authorizationToken=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&chatID=XXXXXXXXXXXXX")`  - simply comment the line number 2 and uncomment line number 3. 
