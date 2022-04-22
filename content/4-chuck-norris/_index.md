@@ -7,8 +7,10 @@ weight = 8
 
 {{< figure src="../images/camelk_workshop01_arch.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
 
-> If you still don't have your Telegram account, bot or chat ID, please refer to the first chapter "Intro" for the instructions on how to get them. 
-
+{{% notice warning %}}
+If you still don't have your Telegram account, bot or chat ID, please refer to the first chapter "Intro" for the instructions on how to get them.
+{{% /notice %}}
+ 
 
 #### What are Kamelets 
 
