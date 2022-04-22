@@ -47,7 +47,7 @@ Kamelets have two kinds of connectors, **sources** and **sinks**. Sources produc
 > You should see the jokes appearing in the terminal. 
 
 {{% notice tip %}}
-Groovy is just one of many programming languages, that you can use to write integration files. All the supported languages for Camel K integration can be found [here.](https://camel.apache.org/camel-k/1.8.x/languages/languages.html)
+Groovy is just one of many programming languages, that you can use to write integration files. All the supported languages for Camel K integrations can be found [here.](https://camel.apache.org/camel-k/1.8.x/languages/languages.html)
 {{% /notice %}}
 
 
@@ -55,6 +55,8 @@ Groovy is just one of many programming languages, that you can use to write inte
 &#9744; Provide your bot Authorization Token and chat ID in places marked by `X` characters.  \
 &#9744; Save the file. After saving, your integration will reload automatically, because we are running it in "dev" mode.
 > Your Telegram bot should now be sending you Chuck Norris jokes!
+
+{{< figure src="../images/telegram_joke.jpeg?width=30pc&classes=border,shadow" title="Click image to enlarge" >}}
 
 &#9744; Verify that each 10 seconds you are getting a new joke.  \
 &#9744; `oc delete project chuck-norris` - clean up the project
