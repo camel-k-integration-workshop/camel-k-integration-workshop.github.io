@@ -12,9 +12,7 @@ weight = 7
 &#9744; Make sure you have the terminal in VSCode opened and you are logged to OpenShift \
 &#9744; `oc new-project helloworld` - create a new project with the name 'helloworld' \
 &#9744; `oc get csv` - you should see the Camel K operator running \
-&#9744; Create a [helloworld.groovy](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/01-helloworld-example/helloworld.groovy) file 
-
-> We will elaborate on the integration file during the workshop 
+&#9744; Create a [helloworld.groovy](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/01-helloworld-example/helloworld.groovy) file. This file specifies the time period in ms for which the message will be printed in the line `from('timer:tick?period=3000')`. The second line specifies the message to be printed. The last line prints it to the terminal.
 
 &#9744; `kamel run helloworld.groovy` - run the integration using `kamel`
 > It might take up to 3 minutes for the integration to run. 
