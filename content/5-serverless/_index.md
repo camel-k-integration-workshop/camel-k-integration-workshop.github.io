@@ -25,7 +25,8 @@ Knative is an open source project that helps us deploy, run, manage serverless a
 -  Serving - Enables rapid deployment of containers and automatic scaling of pods through a request-driven model for serving workloads based on demand.
 - Eventing - An infrastructure for consuming and producing events to stimulate serverless apps. Apps can be triggered by a variety of sources, e.g. AMQ Streams, events from your own apps.
 
-&#9744; Create both instances of Knative Serving and Eventing via OpenShift Serverless operator on the web console
+&#9744; Create both instances of Knative Serving and Eventing via OpenShift Serverless operator on the OpenShift web console
+> Go to **Installed Operators > OpenShift Serverless Operator** and click on **Create Instance** for **Knative Serving** and **Knative Eventing** in the corresponding namespaces, i.e. **Knative Serving** and **Knative Eventing**. Make sure that you create the instance in the correct namespace, you will see the prompted message if you didn't do so.
 
 &#9744;  `oc apply -f telegram-simple-source.kamelet.yaml` - create a [telegram-simple-source.kamelet.yaml](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/03-knative-example/telegram-simple-source.kamelet.yaml) 
 ```
