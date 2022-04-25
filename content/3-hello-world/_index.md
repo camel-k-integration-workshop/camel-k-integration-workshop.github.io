@@ -11,7 +11,7 @@ weight = 7
 
 &#9744; Make sure you have the terminal in VSCode opened and you are logged to OpenShift \
 &#9744; `oc new-project helloworld` - create a new project with the name 'helloworld' \
-&#9744; `oc get csv` - you should see the Camel K operator running \
+&#9744; `oc get csv` - shows operators that have been installed to the cluster by the cluster administrator and are available for use, you should be seeing the Camel K operator running \
 &#9744; Create a [helloworld.groovy](https://github.com/camel-k-integration-workshop/camel-k-workshop/blob/main/01-helloworld-example/helloworld.groovy) file. This file specifies the time period in ms for which the message will be printed in the line `from('timer:tick?period=3000')`. The second line specifies the message to be printed. The last line prints it to the terminal.
 
 &#9744; `kamel run helloworld.groovy` - run the integration using `kamel`
@@ -19,10 +19,10 @@ weight = 7
 
 &#9744; `oc get integrations` - check if the integration is running \
 &#9744; `kamel logs helloworld` - get the logs of the running integration
-> You will see the hello world message printing out in the terminal every 3 seconds
-> If you run `kamel run helloworld.groovy --logs` in the beginning, you will see the logs showing in the terminal as well
+> You will see the hello world message printing out in the terminal every 3 seconds.  
+> You can achieve the same by running the command with `--logs` argument in the beginning: `kamel run helloworld.groovy --logs` 
 
-&#9744; `kamel run helloworld.groovy --dev` - alternatively, run the integration in the `dev mode` \
+&#9744; `kamel run helloworld.groovy --dev` - now let's try running the integration in the dev mode \
 &#9744; change the `from('timer:tick?period=3000')` to `from('timer:tick?period=5000')` in the `helloworld.groovy` file 
 > The running integration will reload, a few seconds later you will see the hello world message printing out in the terminal every 5 seconds 
 
