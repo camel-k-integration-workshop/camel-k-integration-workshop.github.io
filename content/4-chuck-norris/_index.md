@@ -7,7 +7,7 @@ weight = 8
 Our goal is to connect to a website containing Chuck Norris jokes via API, get a joke every few seconds and print it in the terminal first,  \
 and then also send it to our Telegram channel. Architecture of this example is shown below:
 
-{{< figure src="../images/camelk_workshop01_arch.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
+{{< figure src="../images/camelk_workshop02_arch.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
 
 {{% notice warning %}}
 If you still don't have your Telegram account, bot or chat ID, please refer to the first chapter "Intro" for the instructions on how to get them.
