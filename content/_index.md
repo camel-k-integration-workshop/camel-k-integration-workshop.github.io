@@ -1,9 +1,15 @@
 # Camel K Workshop
 
 ## What is it about
-This workshop aims to help gain your first hands-on experience with Camel K and the important concepts such as Kamelets, KameletBindings and Knative.
+This workshop aims to help gain your first hands-on experience with Camel K and the important concepts such as Kamelets, KameletBindings and Knative. 
 
+It requires admin access to an OpenShift Container Platform cluster to install the dependencies such as various operators. 
 
+No previous knowledge of any programming language is mandatory, although recommended to understand YAML and Groovy code snippets we will be using.
+
+{{% notice tip %}}
+During the workshop, you are free to create integrations in any language supported by Camel. They can be found [here.](https://camel.apache.org/camel-k/1.8.x/languages/languages.html) They are not in scope of this course though.
+{{% /notice %}}
 
 ## Architecture overview
 
@@ -14,7 +20,7 @@ This workshop aims to help gain your first hands-on experience with Camel K and 
 {{< figure src="../images/camelk_workshop01_arch.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
 
 
-2. The second exercise's goal is to create an integration using a Kamelet - new concept introduced in Camel K that allow users to connect to external systems via a simplified interface, hiding all the low level details about how those connections are implemented. To showcase the use of it, we will connect to the database of Chuck Norris jokes using just one command. Then we will send the joke to the terminal first, and then we will also send it as a Telegram message. In order to do that, Telegram account and Telegram bot will be required. 
+2. The second exercise's goal is to create an integration using a Kamelet - new concept introduced in Camel K that allow users to connect to external systems via a simplified interface, hiding all the low level details about how those connections are implemented. To showcase the use of it, we will connect to the database of Chuck Norris jokes using just one command. We will send the joke to the terminal first, and then we will also send it as a Telegram message. In order to do that, Telegram account and Telegram bot will be required. 
 
 {{< figure src="../images/camelk_workshop02_arch.png?width=50pc&classes=border,shadow" title="Click image to enlarge" >}}
 

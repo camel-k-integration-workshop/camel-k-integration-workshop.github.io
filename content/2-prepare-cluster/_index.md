@@ -11,14 +11,22 @@ Before you start you have to install a number of operators you'll use during the
 
 - In the Web Console, go to **Operators > OperatorHub** and search for `Red Hat Integration - Camel K` (You may need to disable search filters)
 - Install the `Red Hat Integration - Camel K Operator` with default settings
-- Go to **Installed Operators > Red Hat Integration - Camel K Operator** and click on the **Create Instance** tile in the `camel-k-workshop` project  <span style="color:red">!!!!check if this step is needed!!!!!</span>.  
+
+{{% notice tip %}}
+Make sure **Installation Mode** is set to **All namespaces on the cluster**
+{{% /notice %}}
+
 - Done!
 
 ### Install and prepare OpenShift Serverless operator
 
 - In the Web Console, go to **Operators > OperatorHub** and search for `Red Hat OpenShift Serverless` (You may need to disable search filters)
 - Install the `Red Hat OpenShift Serverless Operator` with default settings
-- Go to **Installed Operators > Red Hat Integration - Camel K Operator** and click on the **Create Instance** tile in the `camel-k-workshop` project  <span style="color:red">!!!!check if this step is needed!!!!!</span>.  
+
+{{% notice tip %}}
+Make sure **Installation Mode** is set to **All namespaces on the cluster**
+{{% /notice %}}
+
 - Done!
 
 ### Login to OpenShift from your local machine 
