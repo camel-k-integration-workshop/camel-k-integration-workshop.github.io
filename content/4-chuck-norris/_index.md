@@ -16,7 +16,7 @@ If you still don't have your Telegram account, bot or chat ID, please refer to t
 
 #### What are Kamelets? 
 
-Kamelets are custom resources that hide the complexity of connecting to external systems behind a simple interface, which contains all the information needed to instantiate them, even for users who are not familiar with Camel. You can install kamelets on an OpenShift cluster and use in Camel K integrations.
+Kamelets are custom resources that hide the complexity of connecting to external systems behind a simple interface, which contains all the information needed to instantiate them, even for users who are not familiar with Camel. You can install kamelets on an OpenShift cluster and use then in Camel K integrations.
 
 As kamelets look like any other Camel component, experienced developers will enjoy using them as much, and will quickly browse through all the already available, predefined Catalog Kamelets. It is of course possible to create your own kamelets too!
 You can define your own library of reusable kamelets for your organisation. And desirebly, contribute them to the Camel community.
@@ -47,7 +47,7 @@ Kamelets have two kinds of connectors, **sources** and **sinks**. Sources produc
 > You should see the jokes appearing in the terminal. 
 
 {{% notice tip %}}
-Groovy is just one of many programming languages, that you can use to write integration files. All the supported languages for Camel K integrations can be found [here.](https://camel.apache.org/camel-k/1.8.x/languages/languages.html)
+Groovy is just one of many programming languages that you can use to write integration files. All the supported languages for Camel K integrations can be found [here.](https://camel.apache.org/camel-k/1.8.x/languages/languages.html)
 {{% /notice %}}
 
 

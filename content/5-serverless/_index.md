@@ -44,7 +44,7 @@ spec:
     properties:
       authorizationToken:
         title: Token
-        description: The token to access your bot on Telegram. You you can obtain it from the Telegram @botfather.
+        description: The token to access your bot on Telegram. You can obtain it from the Telegram @botfather.
         type: string
         format: password
         x-descriptors:
@@ -101,17 +101,17 @@ from('knative:channel/telegram')
   .convertBodyTo(String.class)
   .to('log:info')
 ```
-Here we create the simple event consumer that takes the messages from the Knative Channel and then print them out in the log. 
+Here we create a simple event consumer that takes the messages from the Knative Channel and then prints them out in the log. 
 
 &#9744; Send some messages to your telegram bot \
 &#9744; `kamel logs printer` - check the logs of the printer
-> You can also go to the OpenShift web console and check the logs of Printer pod.
+> You can also go to the OpenShift web console and check the logs of the Printer pod.
 > knative Serving enables autoscaling of the applications and it is event driven, so if we don’t send any messages from now on, you should see the pod scale down to 0 automatically, maybe we need to wait for a bit.
 
 &#9744; Stop sending messages to the telegram bot 
 > Printer pod autoscales to zero 
 
-> If you want to trigger the printer running again, you can simply send the message to the bot again, and after a few second, you should see the printer pod will start scaling up again.
+> If you want to trigger the printer running again, you can simply send the message to the bot again, and after a few seconds, you should see the printer pod will start scaling up again.
 
 &#9744; `oc delete project userX-message-printer` - clean up the namespace
 

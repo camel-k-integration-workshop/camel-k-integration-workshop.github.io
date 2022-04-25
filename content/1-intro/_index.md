@@ -6,7 +6,7 @@ weight = 1
 ## Prerequisites
 
 Before we start going through the workshop, make sure that you have **VSCode** or **VSCodium** installed on your machine.
-For simplicity, we will reference the IDE as **VSCode** going forward.
+For the convenience, we will reference the IDE as **VSCode** going forward.
 > If you are familiar with Git, you can clone following GitHub Repository and open it with VSCode:
 > https://github.com/camel-k-integration-workshop/camel-k-workshop
 
@@ -22,9 +22,17 @@ Alternatively, you can follow [this link](https://telegram.org/) to get the desk
 &#9744; Search for username ***@BotFather*** \
 &#9744; Start the chat: ***/start*** \
 &#9744; Send message: ***/newbot***  to ***@BotFather*** \
-&#9744; Follow the instruction of ***@BotFather*** and create a name and username for the bot. \
-&#9744; Once the bot is created, we will get a token to access the HTTP API, **keep the token secure and store it safely**. \
-&#9744; You should search for your newly-created bot and click ***/start*** to initiate the conversation with the bot.
+&#9744; Follow the instructions of ***@BotFather*** and create name and username for the bot. \
+&#9744; Once the bot is created, you will receive a token to access the HTTP API, **keep the token secure and store it safely**. 
+
+{{< figure src="../images/botfather2.png?width=25pc&classes=border,shadow" title="Click image to enlarge" >}}
+
+&#9744; Now search for your newly-created bot and click ***/start*** to initiate the conversation with the bot. Feel free to say "Hi"!
+
+
+{{% notice tip %}}
+If you encounter any issues during the process or you seek additional information about bots, official Telegram website provides complete instructions on [how to create a bot with the help of BotFather.](https://core.telegram.org/bots#6-botfather) 
+{{% /notice %}}
 
 #### Get our Chat ID
 &#9744; Search for username ***@RawDataBot*** with name `Telegram Bot Raw` \
